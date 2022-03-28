@@ -29,12 +29,20 @@ class Usuario {
     countMascotas(){
         return `mascota: ${this.mascota}`
     }
+    //addBook (bookNombre, bookAutor){
+       // this.libro.push({ombre:bookNombre, autor: bookAutor});
+       // console.log("Se añadio", `{nombre: ${bookNombre}, autor ${bookAutor}}`);
+    //}
+    getBookNames(){
+       return `libro: ${this.libro}`
+    }
     
 }
 
-const usuario1 = new Usuario('Marcelo','Torino' ,'Psicoanalista', ['perro', 'gato'])
+const usuario1 = new Usuario('Marcelo','Torino' ,["nombre: El Psicoanalsita", "autor: Jhon Katzenbach"], ['perro', 'gato'])
 
-const usuario2 = new Usuario('Elena', 'Yokese','Culinario', 'no tiene')
+const usuario2 = new Usuario('Elena', 'Yokese',["nombre: Orgullo y prejuicio", "autor:Jane Austen"], 'no tiene')
+
 
 
 
@@ -47,3 +55,8 @@ console.log(usuario1.countMascotas());
 //
 console.log(usuario2.getFullName())
 console.log(usuario2.countMascotas());
+//
+
+console.log(usuario1.getBookNames());
+console.log(usuario2.getBookNames());
+
